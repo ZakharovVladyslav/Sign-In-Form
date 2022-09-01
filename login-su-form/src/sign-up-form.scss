@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// styles
+
+$sign-up-background: hsl(28, 100%, 97%);
+$login-preview-bg: hsl(178, 71%, 13%);
+$input-color: hsl(28, 100%, 97%);
+
+$font: "Reem Kufi", serif;
+
+.card-l-successful {
+    font-family: $font;
+    font-weight: 600;
+    overflow: hidden;
+
+    width: 500px;
+    height: 700px;
+    border-radius: 25px;
+
+    background-color: $sign-up-background;
+    color: #000;
+
+    text-align: center;
+
+    h1 {
+        margin-top: 100px;
+        font-size: 42px;
+    }
+
+    label:nth-child(2) {
+        max-width: 400px;
+        margin: 50px auto 0 auto;
+    }
+
+    div:nth-child(3) {
+        overflow: hidden;
+        
+        width: 630px;
+        height: 400px;
+        margin: 100px 0 0 -90px;
+
+        transform: rotate(10deg);
+
+        background-color: rgba(10, 58, 56, 0.2);
+    }
+
+    div:nth-child(4) {
+        overflow: hidden;
+
+        width: 700px;
+        height: 500px;
+        margin: -400px 0 0 -40px;
+
+        transform: rotate(-20deg);
+
+        background-color: rgba(10, 58, 56, 0.4);
+    }
+
+    div:nth-child(5) {
+        overflow: hidden;
+
+        width: 700px;
+        height: 450px;
+        margin: -420px 0 0 -40px;
+
+        transform: rotate(-15deg);
+
+        background-color: rgba(10, 58, 56, 0.4);
+    }
+
+    button {
+        position: absolute;
+        margin-top: -840px;
+        margin-left: 190px;
+
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+
+        font-size: 30px;
+        background-color: none;
+        background: none;
+        border: none;
+
+        transition: transform 0.5s ease;
+    }
+
+    button:hover {
+        cursor: pointer;
+
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+        
+        transform: rotate(180deg);
+        transition: transform 0.5s ease;
+    }
+    
+    input {
+        width: 120px;
+        height: 30px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+
+        background: rgba(10, 58, 56, 0.4);
+        border-radius: 10px;
+
+        border: 1px solid rgba(10, 58, 56, 0.5);
+
+        font-family: $font;
+        font-size: 24px;
+        color: $input-color;
+        text-align: center;
+
+        padding-left: 15px;
+        transition: border-left 0.2s ease;
+    }
+
+    input::placeholder {
+        color: $input-color;
+        text-align: center;
+        padding-right: 10px;
+    }
+    
+    input:focus {
+        border: none;
+        outline: none;
+        border-left: 5px solid rgba(10, 58, 56, 0.4);
+        border-right: 5px solid rgba(10, 58, 56, 0.4);
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+// Login preview part
+.login-preview {
+    width: 700px;
+    border-radius: 25px 0 0 25px;
+
+    background: linear-gradient(50deg, rgba(10, 58, 56, 0.9) 50%, rgb(14, 80, 78));
+
+    text-align: center;
+
+    h1 {
+        margin-top: 200px;
+
+        font-family: 'Reem Kufi';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        
+        color: white;
+    }
+
+    p {
+        max-width: 340px;
+        margin: auto;
+
+        font-family: 'Reem Kufi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 33px;
+
+        color: white;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        margin-top: 40px;
+
+        background: #FFF8F2;
+        transition: background 0.3s ease;
+
+        border: 2px solid rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+
+        color: #000;
+        font-family: $font;
+        font-size: 20px;
+    }
+
+    button:hover {
+        cursor: pointer;
+
+        background: hsl(0, 0%, 79%);
+        transition: background 0.3s ease;
+    }
+}
+
+// Sign up part
+
+.sign-up-form {
+    width: 700px;
+    border-radius: 0 25px 25px 0;
+
+    background-color: $sign-up-background;
+    
+    text-align: center;
+    font-family: $font;
+    font-weight: 600;
+
+    h1 {
+        margin-top: 130px;
+        margin-bottom: 10px;
+
+        font-size: 42px;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+
+        margin: 0 0 40px 20px;
+        padding-right: 20px;
+
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    img:nth-child(3) {
+        height: 52px;
+        width: 52px;
+        transform: translateY(3%);
+    }
+
+    img:hover {
+        cursor: pointer;
+
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input[type="text"] {
+        margin-top: 10px;
+    }
+
+    input {
+        width: 340px;
+        height: 50px;
+        border: none;
+        margin-bottom: 15px;
+        padding-left: 15px;
+
+        background: rgba(10, 58, 56, 0.4);
+        border-radius: 10px;
+
+        border: 1px solid rgba(10, 58, 56, 0.4);
+        transition: border-left 0.3s ease;
+
+        color: $input-color;
+        
+        font-family: $font;
+        font-size: 16px;
+    }
+
+    input::placeholder {
+        color: $input-color;
+    }
+
+    input:hover {
+        border: none;
+        outline: none;
+        border: 1px solid rgba(10, 58, 56, 0.4);
+        border-left: 5px solid rgba(10, 58, 56, 0.4);
+        transition: border-left 0.3s ease;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+
+        background: rgb(10, 58, 56);
+        transition: background 0.2s ease;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+
+        color: $input-color;
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background-color: rgba(10, 58, 56, 0.8);
+        transition: background-color 0.2s ease;
+        border-color: rgba(0, 0, 0, 0.3);
+    }
+}
